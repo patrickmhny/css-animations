@@ -7,9 +7,16 @@
 </head>
 <body>
 
-	<div id="greeting">Hello Friend.</div>
+	<div id="greeting"class=alt>Hello Friend.</div>
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+            $( "#greeting" ).click(function() {
+	       $( "#greeting" ).toggleClass( "alt" );
+            $( "#greeting" ).toggleClass( "animated" );
+        });	
+    </script>
+    
 	
 </body>
 </html>
